@@ -7,7 +7,6 @@ html, body {
 .main {
   width: 100%;
   min-width: 1100px;
-  /*background-image: url(WebDevImg/centralPark.jpeg);*/
 }
 
   .img1 {
@@ -30,25 +29,20 @@ html, body {
     z-index: 100;
     font-size: 20px;
     font-family: Poiret One;
-    justify-content: flex-end;
-    display: flex;
+
   }
     #signIn {
       margin-right: 35px;
     }
     .titleLarge {
-      /*position: absolute;*/
+      position: absolute;
       top: 220px;
       width: 100%;
       min-width: 1100px;
       z-index: 40;
       color: white;
-      display: flex;
-      flex-direction: row;
-      /*flex-flow: column;*/
-      align-items: center;
-      /*flex-flow: row;*/
-      /*justify-content: center;*/
+
+
     }
       #my {
         /*position: absolute;*/
@@ -60,13 +54,7 @@ html, body {
         color: white;
         font-family: Poiret One;
         text-shadow: 0 2px 0 black;
-        display: flex;
-        flex-direction: row;
-        /*flex-flow: column;*/
-        /*align-items: center;*/
-        /*flex-flow: row;*/
-        /*justify-content: center;*/
-        /*align-self: center;*/
+
 
         /* Safari rotate div kit from css-tricks*/
         -webkit-transform: rotate(-90deg);
@@ -89,13 +77,7 @@ html, body {
         color: white;
         font-family: Poiret One;
         text-shadow: 0 2px 0 black;
-        display: flex;
-        /*flex-direction: row;*/
-        /*flex-flow: column;*/
-        /*align-items: center;*/
-        /*flex-flow: row;*/
-        justify-content: center;
-        /*align-self: center;*/
+
       }
       #plan {
         /*position: absolute;*/
@@ -107,13 +89,7 @@ html, body {
         color: white;
         font-family: Poiret One;
         text-shadow: 0 2px 0 black;
-        display: flex;
-        flex-direction: row;
-        /*flex-flow: column;*/
-        /*align-items: center;*/
-        /*flex-flow: row;*/
-        /*justify-content: center;*/
-        /*align-self: center;*/
+
 
         /* Safari rotate div kit from css-tricks*/
         -webkit-transform: rotate(90deg);
@@ -132,10 +108,7 @@ html, body {
       min-width: 1100px;
       z-index: 20;
       display: flex;
-      flex-flow: column;
-      align-items: center;
-      /*position: absolute;*/
-      /*top: 500px;*/
+
 
     }
 
