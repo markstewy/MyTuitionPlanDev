@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="welcomeApp">
+  <head>
+    <link href="main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- <img alt="50thstatefair2012 hd.mp4 poster" class="thumbnail" src="https://s3.amazonaws.com/distill-videos/thumbnails/34/50thStateFair2012-HD.mp4-poster.png"> -->
+    <title>Welcome</title>
+  </head>
+  <body ng-controller="welcomeCtrl">
+    <div class = "main">
+      <img class = "img1" ng-src="{{imgMain}}"/>
+
+      <div class = "login">
+        <div id = "signIn">Sign in</div>
+      </div>
+
+      <div class = "titleLarge" >
+        <div id = "my" >MY</div>
+        <div id = "tuition" >TUITION</div>
+        <div id = "plan">PLAN</div>
+      </div>
+
+      <div id = "title" ng-show="menuSelect">
+        <div id = "topTitle"></div>
+        <div class = "subTitle">{{name}}</div>
+        <div class = "subTitle">Test!</div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="mainApp.js"></script>
+    <script src="mainCtrl.js"></script>
+  </body>
+</html>
