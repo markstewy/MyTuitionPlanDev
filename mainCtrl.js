@@ -9,7 +9,8 @@ angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interva
 // /*camping*/        "https://images.unsplash.com/photo-1444124818704-4d89a495bbae?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1425",
 // /*hair*/           "https://images.unsplash.com/photo-1454909516657-78526f214d05?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=2368db70b62b646d4e7d1d030509cc84",
 // /*gf*/             "https://images.unsplash.com/uploads/1411070807173e4d6762d/f84a3a01?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=df3f701669d5ac5b7e2689e3690f8e7f",
-// /*oceanclif*/      "https://images.unsplash.com/photo-1454625191319-786c05137ef5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=be8b9d695058e46a8b409d5cacae8a7a",
+// /*oceancliff*/     "https://images.unsplash.com/photo-1454625191319-786c05137ef5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=be8b9d695058e46a8b409d5cacae8a7a",
+// /*stadium*/        "https://images.unsplash.com/photo-1420177743490-15ee9ba8c78f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1425"
                   ]
 
     var i = 0;
@@ -23,11 +24,18 @@ angular.module("welcomeApp").controller("welcomeCtrl", function($scope, $interva
         i++;
         $scope.imgMain = imgBank[i];
       }
-    }, 10000);
+    }, 2000);
 
     $timeout(function () {
       $scope.menuSelect = true;
     }, 2000);
+
+    var launch = Date("June 30, 2016 08:00:00:000")
+
+    $interval(function () {
+      $scope.dateNow = new Date();
+      // $scope.dDiff = launch.getTime() - dateNow.getTime();
+    }, 1000);
 
 
 });

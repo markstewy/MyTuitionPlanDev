@@ -9,24 +9,35 @@
   </head>
   <body ng-controller="welcomeCtrl">
     <div class = "main">
-      <img class = "img1" ng-src="{{imgMain}}"/>
+      <div class = sec1>
+        <img class = "img1" ng-src="{{imgMain}}"/>
 
-      <div class = "login">
-        <div id = "signIn">Sign in</div>
-      </div>
+        <div class = "login">
+          <div class="loginInnerLeft">
+            <!-- <img src= "Design/WebDevImg/Logo6.png"/> -->
+          </div>
+          <div class = "loginInnerRight">
+            <div id = "createaccount |">create account</div>
+            <div id = "signIn">sign in</div>
+          </div>
+        </div>
 
-      <div class = "titleLarge" >
-        <div class="innerBanner">
-          <div id = "my" >MY</div>
-          <div id = "tuition" ><span>T</span><span id = kerning>UIT</span>ION</span></div>
-          <div id = "plan">PLAN</div>
+        <div class = "titleLarge" >
+          <div class="innerBanner">
+            <div id = "my" >MY</div>
+            <div id = "tuition" ><span>T</span><span id = kerning>UIT</span>ION</span></div>
+            <div id = "plan">PLAN</div>
+          </div>
+        </div>
+
+        <div id = "title" ng-show="menuSelect">
+          <div id = "topTitle"></div>
+          <div class = "subTitle">{{dateNow}}</div>
+          <div class = "subTitle">{{dateNow}}</div>
         </div>
       </div>
-
-      <div id = "title" ng-show="menuSelect">
-        <div id = "topTitle"></div>
-        <div class = "subTitle">{{name}}</div>
-        <div class = "subTitle">Test!</div>
+      <div class="credit">
+        Web Design Library graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
       </div>
     </div>
 

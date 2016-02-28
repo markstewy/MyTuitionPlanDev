@@ -8,129 +8,158 @@ html, body {
   width: 100%;
   min-width: 1100px;
 }
-
-  .img1 {
-    width: 100%;
-    /*position: absolute;*/
-    min-width: 1100px;
-    z-index: 10;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  .login {
-    width: 100%;
-    /*position: absolute;*/
-    top: 20px;
-    color: white;
-    z-index: 100;
-    font-size: 20px;
-    font-family: Poiret One;
-
-  }
-    #signIn {
-      margin-right: 35px;
-    }
-    .titleLarge {
-      position: absolute;
-      top: 90px;
+.sec1 {
+  width: 100%;
+  min-width: 1100px;
+}
+    .img1 {
       width: 100%;
+      /*position: absolute;*/
       min-width: 1100px;
-      z-index: 40;
+      z-index: 10;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    .login {
+      width: 100%;
+      position: absolute;
+      top: 20px;
       color: white;
+      z-index: 100;
+      font-size: 20px;
+      font-family: Poiret One;
+      /*text-align: right;*/
     }
-    .innerBanner {
-      text-align: center;
-    }
-
-      #my {
-        position: relative;
-        /*top: 65px;*/
-        /*right: 432px;*/
-        /*width: 100%;*/
-        /*min-width: 1100px;*/
-        z-index: 20;
-        font-size: 55px;
-        color: white;
-        font-family: Poiret One;
-        text-shadow: 0 2px 0 black;
-
-
-        /* Safari rotate div kit from css-tricks*/
-        /*-webkit-transform: rotate(90deg);*/
-        /* Firefox */
-        /*-moz-transform: rotate(90deg);*/
-        /* IE */
-        /*-ms-transform: rotate(90deg);*/
-        /* Opera */
-        /*-o-transform: rotate(90deg);*/
-        /* Internet Explorer */
-        /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+      .loginInnerLeft {
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 2px;
       }
-      #tuition {
-        /*position: absolute;*/
-        /*top: 220px;*/
-        /*width: 100%;*/
-        /*min-width: 1100px;*/
-        z-index: 20;
-        font-size: 270px;
-        color: white;
-        font-family: Poiret One;
-        text-shadow: 0 2px 0 black;
-        letter-spacing: 3px;
-        /*text-decoration: overline underline;*/
+      .loginInnerRight {
+        text-align: right;
+        width: 100%;
       }
-        #kerning {
-          letter-spacing: 0.08em;
+      #createaccount {
+
+      }
+        #signIn {
+          margin-right: 35px;
 
         }
-      #plan {
-        /*position: relative;*/
-        /*top: -212px;*/
-        /*right: -490px;*/
-        /*width: 100%;*/
-        /*min-width: 1100px;*/
-        z-index: 20;
-        font-size: 55px;
+
+      .titleLarge {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        min-width: 1100px;
+        z-index: 40;
         color: white;
-        font-family: Poiret One;
-        text-shadow: 0 2px 0 black;
+      }
+      .innerBanner {
+        text-align: center; /*this was the ah ha! moment in trying to center align the title*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+      }
+
+        #my {
+          position: relative;
+          /*top: 65px;*/
+          /*right: 432px;*/
+          /*width: 100%;*/
+          /*min-width: 1100px;*/
+          z-index: 20;
+          font-size: 40px;
+          color: white;
+          font-family: Poiret One;
+          text-shadow: 0 2px 0 black;
+          letter-spacing: 0.20em;
 
 
-         /*Safari rotate div kit from css-tricks*/
-        /*-webkit-transform: rotate(90deg);*/
-         /*Firefox*/
-        /*-moz-transform: rotate(90deg);*/
-         /*IE*/
-        /*-ms-transform: rotate(90deg);*/
-         /*Opera*/
-        /*-o-transform: rotate(90deg);*/
-         Internet Explorer
-        /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+          /* Safari rotate div kit from css-tricks*/
+          /*-webkit-transform: rotate(90deg);*/
+          /* Firefox */
+          /*-moz-transform: rotate(90deg);*/
+          /* IE */
+          /*-ms-transform: rotate(90deg);*/
+          /* Opera */
+          /*-o-transform: rotate(90deg);*/
+          /* Internet Explorer */
+          /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+        }
+        #tuition {
+          /*position: absolute;*/
+          /*top: 220px;*/
+          /*width: 100%;*/
+          /*min-width: 1100px;*/
+          margin: 0px 20px 0px 20px;
+          z-index: 20;
+          font-size: 160px;
+          color: white;
+          font-family: Poiret One;
+          text-shadow: 0 2px 0 black;
+          letter-spacing: 3px;
+          /*text-decoration: overline underline;*/
+          letter-spacing: 0.20em;
+          border-top: 2px black;
+        }
+        
+          #kerning {
+            /*letter-spacing: 0.07em;*/
+
+          }
+        #plan {
+          /*position: relative;*/
+          /*top: -212px;*/
+          /*right: -490px;*/
+          /*width: 100%;*/
+          /*min-width: 1100px;*/
+          z-index: 20;
+          font-size: 40px;
+          color: white;
+          font-family: Poiret One;
+          text-shadow: 0 2px 0 black;
+          letter-spacing: 0.20em;
+
+
+           /*Safari rotate div kit from css-tricks*/
+          /*-webkit-transform: rotate(90deg);*/
+           /*Firefox*/
+          /*-moz-transform: rotate(90deg);*/
+           /*IE*/
+          /*-ms-transform: rotate(90deg);*/
+           /*Opera*/
+          /*-o-transform: rotate(90deg);*/
+           Internet Explorer
+          /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+
+        }
+      #title {
+        color: black;
+        width: 100%;
+        min-width: 1100px;
+        z-index: 20;
+        display: flex;
+
 
       }
-    #title {
-      color: white;
-      width: 100%;
-      min-width: 1100px;
-      z-index: 20;
-      display: flex;
 
+        #topTitle {
+          font-size: 160px;
+          font-family: Poiret One;
+          text-shadow: 0 2px 0 black;
+        }
+        .subTitle {
+          margin-top:15px;
+          font-size: 32px;
+          font-family: Poiret One;
+          text-shadow: 0 2px 0 black;
 
-    }
-
-      #topTitle {
-        font-size: 160px;
-        font-family: Poiret One;
-        text-shadow: 0 2px 0 black;
-      }
-      .subTitle {
-        margin-top:15px;
-        font-size: 32px;
-        font-family: Poiret One;
-        text-shadow: 0 2px 0 black;
-
-      }
+        }
+  .credit {
+    font-size: 8px
+  }
