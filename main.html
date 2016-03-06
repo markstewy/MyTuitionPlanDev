@@ -12,38 +12,36 @@
   </head>
   <body ng-controller="welcomeCtrl">
     <div class = "main">
-      <div class = sec1>
-        <img class = "img1" ng-src="{{imgMain}}"/>
+        <bg-image ></bg-image>
+        <div class="angleLeft">testl</div>
+        <div class="angleRight">testr</div>
+        <!-- <div class = "login"> -->
 
-        <div class = "login">
-          <div class="loginInnerLeft">
-            <!-- <img src= "Design/WebDevImg/Logo6.png"/> -->
-          </div>
           <!-- <div class = "loginInnerRight">
             <div id = "createaccount |">create account</div>
             <div id = "signIn">sign in</div>
           </div> -->
-        </div>
+        <!-- </div> -->
 
         <div class = "titleLarge" >
           <div class="innerBanner">
             <div id = "my" >MY</div>
-            <div id = "tuition" ><span>T</span><span id = kerning>UIT</span>ION</span></div>
+            <div id = "tuition" ><div class #tuitionInner><span>T</span><span id = kerning>UIT</span>ION</span></div></div>
             <div id = "plan">PLAN</div>
           </div>
         </div>
 
         <div class="quoteMain">{{quoteMain}}</div>
 
-        <!-- <div id = "title" ng-show="menuSelect"> -->
-          <!-- <div id = "topTitle">COMING SOON!</div> -->
-          <!-- <div class = "subTitle">{{dateNow}}</div>
-          <div class = "subTitle">{{dateNow}}</dis> -->
-        <!-- </div> -->
-      </div>
+        <div id = "title" ng-show="menuSelect"> -->
+          <div id = "topTitle">COMING SOON!</div>
+          <div class = "subTitle">{{dateNow}}</div>
+          <div class = "subTitle">{{dateNow}}</div>
+        </div>
 
     </div>
-
+    <div class="main2">
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
     <script src="mainApp.js"></script>
     <script src="mainCtrl.js"></script>

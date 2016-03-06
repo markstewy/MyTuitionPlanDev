@@ -4,6 +4,7 @@ html, body {
   width: 100%;
 
 }
+
 .main {
   width: 100%;
   min-width: 1100px;
@@ -12,26 +13,28 @@ html, body {
   width: 100%;
   min-width: 1100px;
 }
-    .img1 {
-      width: 100%;
-      /*position: absolute;*/
-      min-width: 1100px;
 
+.bgImage{
+  width: 100%;
+  min-width: 1100px;
+  min-height: 800px;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+/*============flip image==============*/
       /*-moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       filter: FlipH;
       -ms-filter: "FlipH";*/
-
-
     }
     .login {
       width: 100%;
       position: absolute;
       top: 20px;
       color: white;
-
       font-size: 20px;
       font-family: Poiret One;
       /*text-align: right;*/
@@ -46,19 +49,15 @@ html, body {
         width: 100%;
       }
       #createaccount {
-
       }
         #signIn {
           margin-right: 35px;
-
         }
-
       .titleLarge {
         position: absolute;
-        top: 30px;
+        top: 100px;
         width: 100%;
         min-width: 1100px;
-
         color: white;
       }
       .innerBanner {
@@ -67,7 +66,6 @@ html, body {
         /*justify-content: center;*/
         /*align-items: center;*/
       }
-
         #my {
           position: relative;
           /*top: 65px;*/
@@ -78,9 +76,8 @@ html, body {
           font-size: 30px;
           color: white;
           font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
+          text-shadow: 0 1px 0 black;
           letter-spacing: 0.20em;
-
 
           /* Safari rotate div kit from css-tricks*/
           /*-webkit-transform: rotate(90deg);*/
@@ -103,11 +100,12 @@ html, body {
           font-size: 110px;
           color: white;
           font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
-          letter-spacing: 1.5px;
+          text-shadow: 0 1px 0 black;
+          /*letter-spacing: 1.5px;*/
           /*text-decoration: overline underline;*/
           letter-spacing: 0.20em;
           border-top: 2px black;
+          padding-left: .2em;
 /*
           border-top: 1px solid white;
            border-bottom: 1px solid white;
@@ -118,13 +116,14 @@ html, body {
            border-bottom: 4px solid white;
            display: inline-block;
            margin: 10px auto;
-           padding: 0px 0 1px 0;
+           /*padding: 0px 0 1px 0;*/
         }
-
-          #kerning {
-            /*letter-spacing: 0.07em;*/
-
-          }
+            #tuitionInner {
+              /*margin-left: .2em;*/
+            }
+            #kerning {
+              /*letter-spacing: 0.07em;*/
+            }
         #plan {
           /*position: relative;*/
           /*top: -212px;*/
@@ -135,9 +134,8 @@ html, body {
           font-size: 30px;
           color: white;
           font-family: Montserrat;
-          text-shadow: 0 2px 0 black;
+          text-shadow: 0 1px 0 black;
           letter-spacing: 0.20em;
-
 
            /*Safari rotate div kit from css-tricks*/
           /*-webkit-transform: rotate(90deg);*/
@@ -149,7 +147,6 @@ html, body {
           /*-o-transform: rotate(90deg);*/
            /*Internet Explorer*/
           /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
-
         }
       #title {
         color: black;
@@ -190,16 +187,41 @@ html, body {
           text-align: center;
           color: white;
           margin-top:15px;
-          font-size: 32px;
+          font-size: 25px;
+          font-weight: lighter;
           font-family: Poiret One;
-          text-shadow: 0 2px 0 black;
           position: absolute;
-          top: 500px;
+          top: 720px;
           width: 100%;
           min-width: 1100px;
 
         }
+  .main2 {
+    height: 800px;
+    background-color: green;
 
-  /*.credit {
-    font-size: 8px*/
+  }
+  .angleRight {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+
+    position: fixed;
+    right: -50%;
+    background-color: black;
+    height: 100px;
+  }
+  .angleLeft {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+    position: relative;
+    right: 25%;
+    background-color: black;
+    height: 100px;
   }
